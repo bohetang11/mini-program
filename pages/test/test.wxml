@@ -1,0 +1,19 @@
+<!--pages/test/test.wxml-->
+<view class='container'>
+  <text>测试</text>
+  <view>{{msg}}</view>
+  <navigator url='/pages/page1/page1'>跳转</navigator>
+  <input value='{{msg}}'/>
+  <text>{{msg+1}}</text>
+  <text>{{1+1}}</text>
+  <checkbox checked='{{true}}'></checkbox>
+  <text>{{foo.addPost(msg)}}</text>
+</view>
+
+<wxs module='foo'>
+  module.exports={
+    addPost:function(input){
+      return input+'wxs'
+    }
+  }
+</wxs> 
