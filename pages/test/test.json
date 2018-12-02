@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#ccc",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "微信接口功能演示",
+  "backgroundColor": "pink",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh":true
+}

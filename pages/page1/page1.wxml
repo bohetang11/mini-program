@@ -1,0 +1,10 @@
+<!--pages/page1/page1.wxml-->
+<text>pages/page1/page1.wxml</text>
+
+<text hidden='{{!isLoading}}'>
+  Loading...
+</text>
+
+<text hidden='{{isLoading}}'>
+  Loading done
+</text>
