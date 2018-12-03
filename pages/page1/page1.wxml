@@ -6,5 +6,13 @@
 </text>
 
 <text hidden='{{isLoading}}'>
-  Loading done
+  Load done
 </text>
+
+<view wx:for='{{students}}' wx:key='id' data-index='{{item.id}}' bindtap='click'>
+{{item.name}}--{{item.age}}
+</view>
+
+<input type='text' value='{{foo}}' bindinput='handleChange'/>
+<text>{{foo}}</text>
+

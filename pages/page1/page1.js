@@ -1,11 +1,24 @@
 // pages/page1/page1.js
 Page({
-
+  click(e){
+    console.log(e.target.dataset.index)
+  },
+  handleChange(e){
+    console.log(e.detail.value)
+    this.setData({ foo: e.detail.value})
+  },
   /**
    * 页面的初始数据
    */
   data: {
-    isLoading: true
+    isLoading: true,
+    students: [
+      { id: 1, name: 'zjamg1', age: 18 },
+      { id: 2, name: 'zjamg2', age: 18 },
+      { id: 3, name: 'zjamg3', age: 18 },
+      { id: 4, name: 'zjamg4', age: 18 }
+    ],
+    foo: 'hello wechat app'
   },
 
   /**
@@ -19,9 +32,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    setTimeout(()=>{
-      this.setData({isLoading:false})
-    },2000)
+    setTimeout(() => {
+      this.setData({ isLoading: false })
+    }, 2000)
   },
 
   /**
